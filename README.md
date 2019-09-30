@@ -34,7 +34,7 @@ Recently, image-to-image translation research has witnessed remarkable progress.
 
 # Results 
 <br>
-<p align="center"><img width="100%" height='60%'src="img/samples/face_compara_baselines.png" /></p>
+<p align="center"><img width="100%" height='60%'src="img/smaples/face_compara_baselines.png" /></p>
 
 
 # References 
