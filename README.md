@@ -24,9 +24,14 @@ Recently, image-to-image translation research has witnessed remarkable progress.
 - Download dataset or use your dataset.
 
 
-- Run 'python transfer_gan.py'
+- Run: 
 
   python main.py --mode train --dataset CelebA --celeba_image_dir data/celeba/images --attr_path data/celeba/list_attr_celeba.txt --image_size 128 --c_dim 5 --sample_dir results/samples --log_dir results/logs  --model_save_dir results/models --result_dir results/results --selected_attrs  Sideburns Bangs Blond_Hair Brown_Hair Male Eyeglasses  --lambda_noise 800 --attention True 
+
+
+  If you want to get insight quickly, try: 
+
+  python main.py --mode train --dataset CelebA --celeba_image_dir data/celeba/images --attr_path data/celeba/list_attr_celeba.txt --image_size 128 --c_dim 5 --sample_dir results/samples --log_dir results/logs  --model_save_dir results/models --result_dir results/results --selected_attrs  Sideburns Bangs Blond_Hair Brown_Hair Male Eyeglasses  --lambda_noise 0 --attention True 
  
 # Framework 
 <br>
@@ -38,9 +43,11 @@ Recently, image-to-image translation research has witnessed remarkable progress.
 
 
 # References 
-Our code heavilly heavily rely on the following projects: 
+Our code  heavily rely on the following projects: 
 - \[1\] 'StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation' by Choi et. al, https://arxiv.org/abs/1711.09020, (https://github.com/yunjey/stargan)[code] 
 - \[2\] 'MUNIT: Multimodal UNsupervised Image-to-image Translation' by Huang  et. al, https://arxiv.org/abs/1804.04732, (https://github.com/NVlabs/MUNIT) 
+
+It would be helpful to understand this project if you are familiar with the above projects.
 # Contact
 
 If you run into any problems with this code, please submit a bug report on the Github site of the project. For another inquries pleace contact with me: yaxing@cvc.uab.es
