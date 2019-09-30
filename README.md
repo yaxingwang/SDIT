@@ -5,6 +5,7 @@ Recently, image-to-image translation research has witnessed remarkable progress.
 - [Dependences](#dependences)
 - [Installation](#installtion)
 - [Instructions](#instructions)
+- [Framework](#Framework)
 - [Results](#results)
 - [References](#references)
 - [Contact](#contact)
@@ -26,16 +27,14 @@ Recently, image-to-image translation research has witnessed remarkable progress.
 - Run 'python transfer_gan.py'
 
   python main.py --mode train --dataset CelebA --celeba_image_dir data/celeba/images --attr_path data/celeba/list_attr_celeba.txt --image_size 128 --c_dim 5 --sample_dir results/samples --log_dir results/logs  --model_save_dir results/models --result_dir results/results --selected_attrs  Sideburns Bangs Blond_Hair Brown_Hair Male Eyeglasses  --lambda_noise 800 --attention True 
-
-
  
-- Conditional GAN 
-  If you are interested in using conditional model, just setting parameter 'ACGAN = True'
-# Results 
-Using pretrained models not only get high performance, but fastly attach convergence. In following figure, we show conditional and unconditional settings.
+# Framework 
 <br>
 <p align="center"><img width="100%" height='60%'src="img/framework/framework.png" /></p>
 
+# Results 
+<br>
+<p align="center"><img width="100%" height='60%'src="img/samples/face_compara_baselines.png" /></p>
 
 
 # References 
