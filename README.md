@@ -23,6 +23,7 @@ Recently, image-to-image translation research has witnessed remarkable progress.
     
 - Download dataset or use your dataset.
 
+    The data path is  data/celeba/images, and the attribute is  data/celeba/list_attr_celeba.txt
 
 - Run: 
 
@@ -32,6 +33,8 @@ Recently, image-to-image translation research has witnessed remarkable progress.
   If you want to get insight quickly, try: 
 
   python main.py --mode train --dataset CelebA --celeba_image_dir data/celeba/images --attr_path data/celeba/list_attr_celeba.txt --image_size 128 --c_dim 5 --sample_dir results/samples --log_dir results/logs  --model_save_dir results/models --result_dir results/results --selected_attrs  Sideburns Bangs Blond_Hair Brown_Hair Male Eyeglasses  --lambda_noise 0 --attention True 
+
+  then you can get access to folder: results to check the log and the generated images
  
 # Framework 
 <br>
