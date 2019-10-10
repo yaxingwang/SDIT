@@ -270,7 +270,7 @@ class Solver(object):
             x_fake, _ = self.G(x_real, c_trg, style)
             out_src, out_cls, out_noise  = self.D(x_fake.detach())
             d_loss_fake = torch.mean(out_src)
-            d_loss_noise = torch.mean(torch.abs(style.squeeze() - out_noise))
+           # d_loss_noise = torch.mean(torch.abs(style.squeeze() - out_noise))
 
             # Compute loss for gradient penalty.
             alpha = torch.rand(x_real.size(0), 1, 1, 1).to(self.device)
@@ -279,7 +279,7 @@ class Solver(object):
             d_loss_gp = self.gradient_penalty(out_src, x_hat)
 
             # Backward and optimize.
-            d_loss = d_loss_real + d_loss_fake + self.lambda_cls * d_loss_cls + self.lambda_gp * d_loss_gp +  self.lambda_noise * d_loss_noise
+            d_loss = d_loss_real + d_loss_fake + self.lambda_cls * d_loss_cls + self.lambda_gp * d_loss_gp # +  self.lambda_noise * d_loss_noise
             self.reset_grad()
             d_loss.backward()
             self.d_optimizer.step()
