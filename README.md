@@ -9,7 +9,7 @@ Recently, image-to-image translation research has witnessed remarkable progress.
 - [Instructions](#instructions)
 - [Framework](#Framework)
 - [Results](#results)
-- [Updated configure](#updated configure)
+- [Update](#Update)
 - [References](#references)
 - [Contact](#contact)
 # Dependences 
@@ -47,8 +47,7 @@ Recently, image-to-image translation research has witnessed remarkable progress.
 <br>
 <p align="center"><img width="100%" height='60%'src="img/smaples/face_compara_baselines.png" /></p>
 
-# Updated configure 
-Our code  heavily rely on the following projects: 
+# Update 
 There is one type error. In paper we mention the hyper-parameters: Image_rec = 800, Lat_rec=10, which should be opposite. Thank you @taki0112(https://github.com/taki0112) 
 
 # References 
