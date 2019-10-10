@@ -270,7 +270,6 @@ class Solver(object):
             x_fake, _ = self.G(x_real, c_trg, style)
             out_src, out_cls, out_noise  = self.D(x_fake.detach())
             d_loss_fake = torch.mean(out_src)
-            #d_loss_noise = torch.mean(torch.abs(style.squeeze() - out_noise))
 
 
             # Compute loss for gradient penalty.
